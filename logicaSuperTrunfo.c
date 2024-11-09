@@ -9,7 +9,7 @@ int main() {
  //Definição de variáveis a serem trabalhadas 
 
     int populacao1, populacao2, pontosturisticos1, pontosturisticos2;
-    char pais[50], estado[50], cidade1[50], cidade2[50], codigo1[50], codigo2[50];
+    char pais[60], estado[50], cidade1[50], cidade2[50], codigo1[50], codigo2[50];
     float area1, area2, pib1, pib2, densidadepopulacional1, pibpercapita1, densidadepopulacional2, pibpercapita2;
 
 //Cadastro das cartas com a interação do usuário no terminal
@@ -97,7 +97,7 @@ int main() {
 
 //Início de implantação do código do novo desafio utilizando if/else
 
-    printf("Vamos comparar os resultados das cidades:\n\n");
+    printf("\nVamos comparar os resultados das cidades:\n\n");
 
     if(populacao1>populacao2){
         printf("A cidade 1 tem a maior população.\n");
@@ -134,16 +134,37 @@ int main() {
     printf("A cidade 2 tem maior PIB per capita. \n");
     }
 
+//resultado comparativo
+    int pontoscidade1, pontoscidade2;
+
+    printf("\nConte os pontos adquiridos em cada atributo.\n");
+
+    printf("Quantos pontos a cidade 1 recebeu?\n");
+    scanf("%d", &pontoscidade1);
+
+    printf("Quantos pontos a cidade 2 recebeu?\n");
+    scanf("%d", &pontoscidade2);
+
+    if (pontoscidade1>pontoscidade2){
+        printf("A cidade 1 ganhou!\n");
+    }else if (pontoscidade2>pontoscidade2){
+        printf("A cidade 2 ganhou!\n");
+    }else{
+        printf("Houve um empate!\n");
+
+    }
 
 
-
-    printf("\nVamos aos resultados?\n");
-    printf(" Qual cidade com menor Densidade populacional? %d\n", densidadepopulacional1 < densidadepopulacional2);
-    printf(" A cidade com maior PIB per capita é a cidade 1? %d\n", pibpercapita1 > pibpercapita2);
-   
 
     return 0;
 }
+    /*printf("\nVamos aos resultados?\n");
+    printf(" Qual cidade com menor Densidade populacional? %d\n", densidadepopulacional1 < densidadepopulacional2);
+    printf(" A cidade com maior PIB per capita é a cidade 1? %d\n", pibpercapita1 > pibpercapita2);*/
+   
+
+   
+
 
     // Exemplo:
     // if (populacaoA > populacaoB) {
