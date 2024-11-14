@@ -5,8 +5,27 @@ int main() {
 
  //Nome do jogo com dois espaços para melhor visualização.   
     printf("SuperTrunfo países \n \n");
-    
- //Definição de variáveis a serem trabalhadas 
+
+//Menu interativo
+   int opcao;
+
+    printf("Escolha uma das opções a seguir:\n");
+    printf("1. Entenda o jogo\n");
+    printf("2. Cadastre as cartas e veja os resultados:\n"); 
+    printf("3. Encerrar jogo\n");
+
+    scanf("%d", &opcao);
+
+switch (opcao)
+{
+case 1:
+    printf("O jogo consiste em cartas com informações de cidades de países que deverão duelar para definir a carta vencedora.\n");
+    break;
+
+case 2:
+    printf("Vamos iniciar o cadastro das cartas:\n");
+
+//Definição de variáveis a serem trabalhadas 
 
     int populacao1, populacao2, pontosturisticos1, pontosturisticos2;
     char pais[60], estado[50], cidade1[50], cidade2[50], codigo1[50], codigo2[50];
@@ -95,7 +114,7 @@ int main() {
     printf("A densidade populacional é de: %.2f\n", densidadepopulacional2);
     printf("O PIB per capita é de: %.2f\n", pibpercapita2);
 
-//Início de implantação do código do novo desafio utilizando if/else
+//Uso do if/else para comparação 
 
     printf("\nVamos comparar os resultados das cidades:\n\n");
 
@@ -153,31 +172,17 @@ int main() {
         printf("Houve um empate!\n");
 
     }
+break;
 
+case 3:
+    printf("O jogo foi encerrado!\n");
+break;
 
-
+default:
+    printf("Opção inválida!");
+    break;
+}
+    
     return 0;
 }
-    /*printf("\nVamos aos resultados?\n");
-    printf(" Qual cidade com menor Densidade populacional? %d\n", densidadepopulacional1 < densidadepopulacional2);
-    printf(" A cidade com maior PIB per capita é a cidade 1? %d\n", pibpercapita1 > pibpercapita2);*/
    
-
-   
-
-
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
-
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
-
-
