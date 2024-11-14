@@ -94,7 +94,7 @@ case 2:
 //Agora, a apresentação dos dados coletados:
 
     printf("\nVeja informações da cidade escolhida com base nas informaçãoes preenchidas: \n");
-    printf("\nPaís: %s - Estado: %s", pais, estado);
+    printf("\nPaís: %s - Estado: %s\n", pais, estado);
     printf("Cidade 1: %s\n", cidade1);
     printf("Código da carta 1: %s\n", codigo1);
     printf("A população dessa cidade é de %d\n",populacao1);
